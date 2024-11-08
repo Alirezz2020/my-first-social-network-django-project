@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+   <a href="{% url 'delete' person.id %}"   class="btn btn-danger" >delete</a>
+   <a href="{% url 'update' person.id %}"   class="btn btn-info" >update</a>
+
+   <h2>{{person.name}}</h2>
+   <h2>{{person.age}}</h2>
+   <h2>{{person.email}}</h2>
+
+
+
+{% endblock %}
